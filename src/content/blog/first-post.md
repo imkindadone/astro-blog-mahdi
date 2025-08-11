@@ -1,118 +1,246 @@
----
-title: "Starting to leave notes"
-description: "Why is this blog here?"
-pubDate: "Aug 08 2025"
-heroImage: "/blog-placeholder-3.jpg"
----
+import Header from '../components/Header';
+import { Button } from '../components/Button';
 
----
-import Header from '../components/Header.astro';
----
+# Hello, Adventurer
 
 <Header />
-<main>
-  <h1>Hello, Adventurer</h1>
 
-  <section class="thoughts">
-    <h2>The World We Inhabit</h2>
-    <p>
-      These are indeed challenging times. Many feel adrift, searching for meaning in a world that seems increasingly fragmented. 
-      While some seek salvation externally or question the state of our existence, others waste precious moments chasing ephemeral distractions. 
-      The cycle of conflict, environmental crises, and technological alienation continues to deepen, while consumption culture pulls us further from our true selves.
-    </p>
-
-    <h2>The Inner Light</h2>
-    <p>
-      What I've come to understand is that true guidance lies within. The [True Savior](https://en.whoisimammahdi.com/) – whether called Imam Mahdi, Christ, or God – 
-      doesn't demand our worship but invites us to awaken. The divine spark within each of us is ever-present, 
-      an eternal witness to our joys and struggles. Are we ready to cleanse the veils of ego that obscure this inner radiance?
-    </p>
-
-    <h3>A Personal Revelation</h3>
-    <p>
-      My own journey began with a profound encounter that dissolved decades of emotional weight. In that moment, I understood: 
-      enlightenment isn't about accumulating knowledge or external validation. It's about recognizing the divine within, 
-      like a child rediscovering their parent's embrace. This awakening isn't static – it requires daily nurturing, 
-      like tending a flame through life's storms.
+<main className="container">
+  <section className="hero">
+    <h1 className="hero-title">The Path of Enlightenment</h1>
+    <p className="hero-lead">
+      Welcome to a journey of self-discovery in an age of cosmic disconnection. 
+      Let's explore the intersection of human potential and universal truth.
     </p>
   </section>
 
-  <section class="universal-message">
-    <h2>The Cosmic Perspective</h2>
-    <p>
-      We've mapped galaxies and engineered marvels, yet remain disconnected from what truly matters. The universe within – 
-      our minds, bodies, and souls – holds far greater mysteries than distant star systems. This brief mortal journey is our 
-      cosmic laboratory, where we refine our inner light through conscious choices rather than chasing external validations.
-    </p>
+  <section className="core-message">
+    <h2 className="section-title">The Human Condition</h2>
+    
+    <div className="content-grid">
+      <article className="column">
+        <h3 className="sub-title">Our Modern Paradox</h3>
+        <p>
+          We've mapped galaxies but lost our way inward. While consumption culture 
+          promises fulfillment through external acquisition, true awakening lies 
+          in cultivating the divine spark within.
+        </p>
+        
+        <ul className="key-points">
+          <li>🌍 Wars & disasters distract from inner transformation</li>
+          <li>📱 Technology alienates us from our essence</li>
+          <li>🔄 Consumption cycles prevent authentic connection</li>
+        </ul>
+      </article>
 
-    <h3>The Path Forward</h3>
-    <p>
-      Whether you're a scholar, creator, or seeker, your unique perspective matters. True progress isn't measured by academic titles 
-      or technological milestones, but by our collective ability to: 
-      <ul>
-        <li>Transcend historical cycles of blame</li>
-        <li>Channel knowledge into wisdom</li>
-        <li>Harmonize individual gifts for collective upliftment</li>
-      </ul>
-      
-      This is how we create meaningful change – not through grand declarations, but through sustained, conscious effort.
-    </p>
+      <article className="column">
+        <h3 className="sub-title">The Inner Revolution</h3>
+        <p>
+          The [True Savior](https://en.whoisimammahdi.com/) isn't distant - they're the 
+          reflection of our highest potential. This sacred journey requires:
+        </p>
+        
+        <ol className="transformation-steps">
+          <li>🔥 Cleansing the ego's distortions</li>
+          <li>🌱 Nurturing inner light through practice</li>
+          <li>🚀 Elevating consciousness daily</li>
+        </ol>
+      </article>
+    </div>
   </section>
 
-  <section class="call-to-action">
-    <h2>Your Journey Awaits</h2>
+  <section className="universal-truth">
+    <h2 className="section-title">Cosmic Perspective</h2>
+    
+    <blockquote className="profound-quote">
+      "We are stardust with consciousness, not just consciousness with stardust."
+    </blockquote>
+
+    <div className="truth-grid">
+      <div className="truth-card">
+        <h4>Human Design</h4>
+        <p>
+          Our bodies are temples containing:
+          <ul>
+            <li>🧠 A universe of neural networks</li>
+            <li>❤️ A cosmic engine of love</li>
+            <li>🌀 A dynamo of spiritual energy</li>
+          </ul>
+        </p>
+      </div>
+
+      <div className="truth-card">
+        <h4>Universal Law</h4>
+        <p>
+          The universe operates on principles of:
+          <ul>
+            <li>🔄 Cycles of growth and release</li>
+            <li>🌐 Interconnected consciousness</li>
+            <li>⚖️ Balance through harmony</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section className="call-to-action">
+    <h2 className="section-title">Your Cosmic Invitation</h2>
+    
     <p>
-      Like a product team bringing vision to reality, spiritual growth requires collaboration. Each of us holds unique gifts 
-      meant to illuminate the path for others. Through shared wisdom and intentional practice, we can:
-      <ul>
-        <li>Reconnect with our innate purity</li>
-        <li>Transform personal struggles into universal lessons</li>
-        <li>Create ripple effects of positive change</li>
-      </ul>
-      
-      Join this exploration of human potential. Discover how to:
-      <ul>
-        <li>Harmonize body, mind, and spirit</li>
-        <li>Recognize divine patterns in everyday life</li>
-        <li>Turn obstacles into opportunities for growth</li>
-      </ul>
-      
-      <a href="/blog" class="btn">Begin Your Exploration →</a>
+      Whether you're a scientist, artist, or seeker, your unique gifts are needed. 
+      Join the collective awakening through:
     </p>
+    
+    <div className="action-grid">
+      <div className="action-item">
+        <h4>🌱 Personal Growth</h4>
+        <p>Develop practices that:</p>
+        <ul>
+          <li>Deepen self-awareness</li>
+          <li>Expand emotional intelligence</li>
+          <li>Cultivate spiritual resilience</li>
+        </ul>
+      </div>
+
+      <div className="action-item">
+        <h4>🌐 Collective Impact</h4>
+        <p>Contribute through:</p>
+        <ul>
+          <li>Wisdom sharing</li>
+          <li>Community building</li>
+          <li>Conscious innovation</li>
+        </ul>
+      </div>
+    </div>
+
+    <Button href="/blog" variant="primary">Start Your Journey →</Button>
   </section>
 </main>
 
-<style>
-  .thoughts { 
-    max-width: 800px; 
-    margin: 2rem auto; 
-    padding: 0 1rem;
+<style global jsx>
+  /* Base Styles */
+  :global(body) {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #2d3436;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
-  h2 { color: #2c3e50; margin-bottom: 1.5rem; }
-  h3 { color: #34495e; margin: 2rem 0 1rem; }
-  .universal-message { 
-    background: rgba(255,255,255,0.1); 
-    border-radius: 10px; 
-    padding: 2rem; 
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 0;
+  }
+
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2d3436;
+  }
+
+  .hero-lead {
+    font-size: 1.2rem;
+    color: #636e72;
+  }
+
+  /* Core Message Section */
+  .core-message {
+    background: #f6f8fa;
+    padding: 3rem;
+    border-radius: 10px;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .column {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .key-points, .transformation-steps {
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  /* Universal Truth Section */
+  .universal-truth {
+    padding: 3rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  }
+
+  .profound-quote {
+    font-style: italic;
+    color: #636e72;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #fff3e0;
+    border-left: 4px solid #ffe082;
+  }
+
+  .truth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .truth-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  /* Call to Action */
+  .call-to-action {
+    text-align: center;
+    padding: 4rem 0;
+    background: #2d3436;
+    color: white;
+  }
+
+  .action-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     margin: 2rem 0;
   }
-  .call-to-action { 
-    text-align: center; 
-    margin: 3rem 0; 
+
+  .action-item {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 8px;
   }
-  .btn {
+
+  /* Button Styles */
+  .mdx-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background: #3498db;
+    background: #1e90ff;
     color: white;
     text-decoration: none;
     border-radius: 25px;
     transition: background 0.3s;
+    font-weight: 600;
   }
-  .btn:hover { background: #2980b9; }
-  ul { 
-    padding-left: 1.5rem; 
-    margin: 1rem 0; 
-    color: #2c3e50; 
+
+  .mdx-button:hover {
+    background: #1874cd;
   }
 </style>
