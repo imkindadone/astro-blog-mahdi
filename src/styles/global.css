@@ -174,7 +174,7 @@ hr {
 
 /* Optional: Add a container for better layout */
 .container {
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -185,7 +185,7 @@ hr {
   display: flex;
   gap: 2rem;
   margin: 3rem 0;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -206,8 +206,6 @@ hr {
 .image-container {
   flex-shrink: 0;
   width: 40%;
-  min-width: 250px;
-  max-width: 500px;
 }
 
 .image-container img {
