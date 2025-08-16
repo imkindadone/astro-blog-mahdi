@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
 ---
 
 <!doctype html>
@@ -15,7 +16,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <body>
 	<Header />
 	<main>
-
+		<!-- Section 1: Image on right -->
 		<section class="text-image-section">
 			<div class="content-section">
 				<h2>These days...</h2>
@@ -29,27 +30,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					that are not said or are not heard. I think these earthquakes are not going to shake
 					humanity anymore.</p>
 			</div>
-			<div class="image-container">
-				<img src="prod41035_ypv2.jpg" alt="Introduction image description">
+			<div class="image-container float-right">
+				<img src="prod41035_ypv2.jpg" alt="Hard times" loading="lazy">
 			</div>
+			<div class="clearfix"></div>
 		</section>
-		</div>
 
+		<!-- Section 2: Image on left -->
 		<section class="text-image-section">
+			<div class="image-container float-left">
+				<img src="/farshchian-parastesh2.jpg" alt="Inner light" loading="lazy">
+			</div>
 			<div class="content-section">
 				<h2>What's here for you</h2>
-				<p>is the one who is waitig for you... The pure light within, always there, always listening, knowing
+				<p>is the one who is waiting for you... The pure light within, always there, always listening, knowing
 					everything and
 					feeling everything about you.
-					But the quetion is if you are ready to wipe the smudge on the light bulb so the light within can
+					But the question is if you are ready to wipe the smudge on the light bulb so the light within can
 					breakthrough the darkness of ego
-					and false selves. You might live for your desires but are their really you desires? Why am I saying
-					these? Because I was looking for my own a lot.
+					and false selves. You might live for your desires but are they really your desires? Why am I saying
+					this? Because I was looking for my own a lot.
 					Then by one glance of this perfection I was able to taste a new sensation of love and purity and
 					awareness which I've never had. All the sorrow, hate, burden, false ego
 					were gone and I left with a hint, with path, with something to look for, seeking the same again. I
 					felt
-					like a child, I felt like an orphant who found his lost father after ages of pain
+					like a child, I felt like an orphan who found his lost father after ages of pain
 					But as the time ticks away, it kept fading although I was running longer for it... and all I can do
 					is
 					to reflect a small ray.
@@ -61,13 +66,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					This small and short chance to grow the stars within and doing the
 					right thing rather than looking for stars our of our solar system while angels are starving.</p>
 			</div>
-			<div class="image-container">
-				<img src="/farshchian-parastesh2.jpg" alt="Introduction image description">
-			</div>
+			<div class="clearfix"></div>
 		</section>
-		</div>
 
-
+		<!-- Section 3: Image centered below -->
 		<section class="text-image-section">
 			<div class="content-section">
 				<h2>What to do</h2>
@@ -75,39 +77,121 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					How much more do we need to learn? How much do you need to know? How much do you need to consume?
 					How many more galaxies are you going to find? How much you need to improve in tech?
 					What and who did we blame through the history? Yet, Here we are 2025.
-					Doing the same thing agian and worse and faster.
+					Doing the same thing again and worse and faster.
 					As you cleanse, all the knowledge flows within.
 					I'm gonna describe him in my own way so maybe I could understand more to fulfillment of an
 					obligation
 					and commit to my best friend
-					which saved me. </p>
+					which saved me.</p>
 			</div>
-			<div class="image-container">
-				<img src="/prod41266_magi/jpg" alt="Introduction image description">
+			<div class="image-container center">
+				<img src="/prod41266_magi/jpg" alt="Seeking knowledge" loading="lazy">
 			</div>
 		</section>
-		</div>
 
-		<section class="full-image-section">
+		<!-- Section 4: Image centered below -->
+		<section class="text-image-section">
 			<div class="content-section">
 				<h2>How we get there</h2>
 				<p>You know everybody is there like it happens when the time comes.
 					When a team work on a product, CEO might say we launch it when time comes but it doesn't mean nobody
 					is
 					doing anything.
-					That's how i'm trying to make it happen. We are all gifted with our own knowledge and talents all he
+					That's how I'm trying to make it happen. We are all gifted with our own knowledge and talents all he
 					wants us is to use with
 					wisdom for the greater purpose.
 					I'll try to open a new perspective toward human, mind, body, soul and the universe.
 					Check Blogs.</p>
 			</div>
-			<div class="image-container">
-				<img src="/farshchian-parastesh-hope.jpg" alt="Introduction image description">
+			<div class="image-container center">
+				<img src="/farshchian-parastesh-hope.jpg" alt="Path to enlightenment" loading="lazy">
 			</div>
 		</section>
-		</div>
 	</main>
 	<Footer />
 </body>
 
 </html>
+
+<style>
+	/* Base styles */
+	.text-image-section {
+		margin: 3rem 0;
+		padding: 1.5rem;
+		background: rgba(255, 255, 255, 0.05);
+		border-radius: 10px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+	
+	.content-section {
+		padding: 1rem;
+	}
+	
+	.content-section h2 {
+		margin-top: 0;
+		color: #e2e8f0;
+		border-bottom: 1px solid #4a5568;
+		padding-bottom: 0.5rem;
+	}
+	
+	.content-section p {
+		line-height: 1.7;
+		color: #cbd5e0;
+		margin-bottom: 1rem;
+	}
+	
+	/* Image containers */
+	.image-container {
+		margin-bottom: 1.5rem;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	}
+	
+	.image-container img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+	
+	/* Alignment classes */
+	.float-left {
+		float: left;
+		margin: 0 1.5rem 1rem 0;
+		max-width: 45%;
+	}
+	
+	.float-right {
+		float: right;
+		margin: 0 0 1rem 1.5rem;
+		max-width: 45%;
+	}
+	
+	.center {
+		display: block;
+		margin: 2rem auto;
+		max-width: 80%;
+	}
+	
+	/* Clear floats */
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	/* Responsive adjustments */
+	@media (max-width: 768px) {
+		.float-left,
+		.float-right {
+			float: none;
+			margin: 1rem auto;
+			max-width: 100%;
+		}
+		
+		.center {
+			max-width: 100%;
+		}
+	}
+</style>
