@@ -178,3 +178,69 @@ hr {
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+/* Base Layout */
+.text-image-section {
+  display: flex;
+  gap: 2rem; /* Space between text and image */
+  margin: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mobile-First: Stack on small screens */
+@media (max-width: 768px) {
+  .text-image-section {
+    flex-direction: column;
+  }
+}
+
+/* Text Content */
+.text-content {
+  flex: 1; /* Take available space */
+  min-width: 0; /* Prevent flex-shrink issues */
+}
+
+.text-content h2 {
+  margin-bottom: 1rem;
+}
+
+/* Image Container */
+.image-container {
+  flex: 0 0 30%; /* Fixed width for image */
+  max-width: 30%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Prevent image distortion */
+}
+
+/* Optional: Image on the right */
+.text-image-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.card-style {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.card-style img {
+  border-radius: 8px;
+}
+
+.full-image-section {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.full-image-section img {
+  width: 80%;
+  max-width: 800px;
+}
