@@ -180,67 +180,83 @@ hr {
 }
 
 /* Base Layout */
+/* Base Layout (Desktop) */
 .text-image-section {
   display: flex;
-  gap: 2rem; /* Space between text and image */
-  margin: 2rem 0;
+  gap: 2rem;
+  margin: 3rem 0;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* Mobile-First: Stack on small screens */
-@media (max-width: 768px) {
-  .text-image-section {
-    flex-direction: column;
-  }
+  padding: 0 1rem;
 }
 
 /* Text Content */
 .text-content {
-  flex: 1; /* Take available space */
-  min-width: 0; /* Prevent flex-shrink issues */
+  flex: 1;
+  min-width: 0;
+  padding-right: 1.5rem;
 }
 
 .text-content h2 {
   margin-bottom: 1rem;
+  color: #2d3748;
 }
 
-/* Image Container */
+/* Image Container (Desktop) */
 .image-container {
-  flex: 0 0 30%; /* Fixed width for image */
-  max-width: 30%;
+  flex-shrink: 0;
+  width: 40%;
+  min-width: 250px;
+  max-width: 500px;
 }
 
 .image-container img {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  object-fit: cover; /* Prevent image distortion */
+  object-fit: cover;
+  aspect-ratio: 16/9;
 }
 
-/* Optional: Image on the right */
+/* Mobile Layout (Stacked) */
+@media (max-width: 768px) {
+  .text-image-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .text-content {
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .image-container {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+/* Reverse Layout (Desktop Only) */
 .text-image-section.reverse {
   flex-direction: row-reverse;
 }
 
-.card-style {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-}
-
-.card-style img {
-  border-radius: 8px;
-}
-
+/* Full-Width Image Section */
 .full-image-section {
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0;
+  margin: 4rem 0;
+  text-align: center;
 }
 
 .full-image-section img {
-  width: 80%;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.full-image-section .text-content {
   max-width: 800px;
+  margin: 0 auto;
 }
