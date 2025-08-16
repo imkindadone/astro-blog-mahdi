@@ -3,59 +3,222 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1> Hello, Adventurer</h1>
-			<p>
-				I think we are in hard times. Many are lost or hopeless from looking.
-				But many are looking for the savior or they wonder why the world is like this today.
-				So lost that they are wasting the most precious moments. All these wars, all these natural 
-				disasters, machine life. Consumption culture and looking outside instead of looking inward,
-				getting ill while seeking the cure outside and the world which pushes you away from the light
-				I guess I think I know a few things. I'm not here to prove; I want to elevate. 
-				The more I write I began to realize more as I'm trying to tune into words
-				that are not said or are not heard. I think these earthquakes are not going to shake 
-				humanity anymore. What i'm sure about, is that everyone needs to know about the True savior
-				[Imam Mahdi](https://en.whoisimammahdi.com/) and how you could get an advantage; in fact, he is the one 
-				who is waitig for you... The pure light within, always there, always listening, knowing everything and feeling everything about you.
-				But the quetion is if you are ready to wipe the smudge on the light bulb so the light within can breakthrough the darkness of ego
-				and false selves. You might live for your desires but are their really you desires? Why am I saying these? Because I was looking for my own a lot.
-				Then by one glance of this perfection I was able to taste a new sensation of love and purity and awareness which I've never had. All the sorrow, hate, burden, false ego
-				were gone and I left with a hint, with path, with something to look for, seeking the same again. I felt like a child, I felt like an orphant who found his lost father after ages of pain
-				But as the time ticks away, it kept fading although I was running longer for it... and all I can do is to reflect a small ray.
-				Or try to describe him and praise him. Well, Him, Mahdi, Jesus or God, all of them are waiting and looking for us but the thing is, how are we going to understand
-				how does it fit to your mind what is it gonna take to get you to the path of enlightenment. Because Earth or galaxies is not the any compared to what humans have.
-				I human body and material subjects as container for our souls to gain more light and grow even more. This small and short chance to grow the stars within and doing the 
-				right thing rather than looking for stars our of our solar system while angels are starving.
-			</p>
-			<p>
-				Are you a professor? A teacher? A scientist? A philosopher? Does it matter?
-				How much more do we need to learn? How much do you need to know? How much do you need to consume?
-				How many more galaxies are you going to find? How much you need to improve in tech?
-				What and who did we blame through the history? Yet, Here we are 2025. 
-				Doing the same thing agian and worse and faster.
-				As you cleanse, all the knowledge flows within.
-				I'm gonna describe him in my own way so maybe I could understand more to fulfillment of an obligation and commit to my best friend 
-				which saved me. 
-			</p>
-			<p>
-				You know everybody is there like it happens when the time comes.
-				When a team work on a product, CEO might say we launch it when time comes but it doesn't mean nobody is doing anything.
-				That's how i'm trying to make it happen. We are all gifted with our own knowledge and talents all he wants us is to use with
-				wisdom for the greater purpose. 
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<main class="main-container">
+		<!-- Section 1: Image on right -->
+		<section class="text-image-section">
+			<div class="content-section">
+				<div class="image-container center">
+					<img src="prod41035_ypv2.jpg" alt="Hard times" loading="lazy" />
+				</div>
+				<div class="clearfix"></div>
+				<h2>These days...</h2>
+				<p>I think we are in hard times. Many are lost or hopeless from looking.
+					But many are looking for the savior or they wonder why the world is like this today.
+					So lost that they are wasting the most precious moments. All these wars, all these natural
+					disasters, machine life. Consumption culture and looking outside instead of looking inward,
+					getting ill while seeking the cure outside and the world which pushes you away from the light
+					I guess I think I know a few things. I'm not here to prove; I want to elevate.
+					The more I write I began to realize more as I'm trying to tune into words
+					that are not said or are not heard. I think these earthquakes are not going to shake
+					humanity anymore.</p>
+			</div>
+		</section>
 
-				I'll try to open a new perspective toward human, mind, body, soul and the universe.
-				Check Blogs.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+		<!-- Section 2: Image on right -->
+		<section class="text-image-section">
+			<div class="image-container float-right">
+				<img src="/farshchian-parastesh2.jpg" alt="Inner light" loading="lazy" />
+			</div>
+			<div class="content-section">
+				<h2>What's here for you</h2>
+				<p>is the one who is waiting for you... The pure light within, always there, always listening, knowing
+					everything and
+					feeling everything about you.
+					But the question is if you are ready to wipe the smudge on the light bulb so the light within can
+					breakthrough the darkness of ego
+					and false selves. You might live for your desires but are they really your desires? Why am I saying
+					this? Because I was looking for my own a lot.
+					Then by one glance of this perfection I was able to taste a new sensation of love and purity and
+					awareness which I've never had. All the sorrow, hate, burden, false ego
+					were gone and I left with a hint, with path, with something to look for, seeking the same again. I
+					felt
+					like a child, I felt like an orphan who found his lost father after ages of pain
+					But as the time ticks away, it kept fading although I was running longer for it... and all I can do
+					is
+					to reflect a small ray.
+					Or try to describe him and praise him. Well, Him, Mahdi, Jesus or God, all of them are waiting and
+					looking for us but the thing is, how are we going to understand
+					how does it fit to your mind what is it gonna take to get you to the path of enlightenment. Because
+					Earth or galaxies is not the any compared to what humans have.
+					I human body and material subjects as container for our souls to gain more light and grow even more.
+					This small and short chance to grow the stars within and doing the
+					right thing rather than looking for stars our of our solar system while angels are starving.</p>
+			</div>
+			<div class="clearfix"></div>
+		</section>
+
+		<!-- Section 3: Image centered below -->
+		<section class="text-image-section">
+			<div class="content-section">
+				<h2>What to do</h2>
+				<p>Are you a professor? A teacher? A scientist? A philosopher? Does it matter?
+					How much more do we need to learn? How much do you need to know? How much do you need to consume?
+					How many more galaxies are you going to find? How much you need to improve in tech?
+					What and who did we blame through the history? Yet, Here we are 2025.
+					Doing the same thing again and worse and faster.
+					As you cleanse, all the knowledge flows within.
+					I'm gonna describe him in my own way so maybe I could understand more to fulfillment of an
+					obligation
+					and commit to my best friend
+					which saved me.</p>
+			</div>
+			<div class="image-container center">
+				<img src="/prod41266_magi.jpg" alt="Seeking knowledge" loading="lazy" />
+			</div>
+		</section>
+
+		<!-- Section 4: Image centered below -->
+		<section class="text-image-section">
+			<div class="content-section">
+				<h2>How we get there</h2>
+				<p>You know everybody is there like it happens when the time comes.
+					When a team work on a product, CEO might say we launch it when time comes but it doesn't mean nobody
+					is
+					doing anything.
+					That's how I'm trying to make it happen. We are all gifted with our own knowledge and talents all he
+					wants us is to use with
+					wisdom for the greater purpose.
+					I'll try to open a new perspective toward human, mind, body, soul and the universe.
+					Check Blogs.</p>
+			</div>
+			<div class="image-container center">
+				<img src="/farshchian-parastesh-hope.jpg" alt="Path to enlightenment" loading="lazy" />
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	/* Base styles */
+	.main-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.text-image-section {
+		margin: 3rem 0;
+		padding: 0;
+	}
+
+	.content-section {
+		padding: 0;
+	}
+
+	.content-section h2 {
+		margin-top: 0;
+		color: #333;
+		font-size: 1.8rem;
+		padding-bottom: 0.5rem;
+		border-bottom: 2px solid #f0f0f0;
+	}
+
+	.content-section p {
+		line-height: 1.7;
+		color: #333;
+		margin-bottom: 1.5rem;
+		font-size: 1.05rem;
+	}
+
+	/* Image containers */
+	.image-container {
+		margin-bottom: 2rem;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	.image-container img {
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: 4px;
+		transition: transform 0.3s ease;
+	}
+
+	.image-container img:hover {
+		transform: scale(1.01);
+	}
+
+	/* Alignment classes */
+	.float-left {
+		float: left;
+		margin: 0 1.5rem 1rem 0;
+		width: 55%;
+	}
+
+	.float-right {
+		float: right;
+		margin: 0 0 1rem 1.5rem;
+		width: 55%;
+	}
+
+	.center {
+		display: block;
+		margin: 2rem auto;
+		width: 90%;
+	}
+
+	/* Clear floats */
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	/* Responsive adjustments */
+	@media (max-width: 992px) {
+
+		.float-left,
+		.float-right {
+			width: 50%;
+		}
+
+		.center {
+			width: 95%;
+		}
+	}
+
+	@media (max-width: 768px) {
+
+		.float-left,
+		.float-right {
+			float: none;
+			margin: 1rem auto;
+			width: 100%;
+		}
+
+		.center {
+			width: 100%;
+		}
+
+		.content-section h2 {
+			font-size: 1.6rem;
+		}
+
+		.content-section p {
+			font-size: 1rem;
+		}
+	}
+
+	@media (min-width: 1200px) {
+
+		.float-left,
+		.float-right {
+			width: 60%;
+		}
+	}
+</style>
