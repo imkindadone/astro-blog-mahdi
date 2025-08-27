@@ -16,6 +16,13 @@
     0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
     0 16px 32px rgba(var(--gray), 33%);
 }
+/* iphone Custom Font by fontchi.com */
+@font-face {
+    font-family: 'sf';
+    src: url('fonts/iphone-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
   font-family: "Atkinson";
   src: url("/fonts/atkinson-regular.woff") format("woff");
